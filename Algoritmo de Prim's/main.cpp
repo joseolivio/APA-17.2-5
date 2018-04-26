@@ -19,20 +19,20 @@ void Grafo::prims()
     vector<int> pais(V, -1);
 
 
-    // Vetor booleano para saber se o vertice j· foi incluso na MST, inicia todos falsos obviamente.
+    // Vetor booleano para saber se o vertice j√° foi incluso na MST, inicia todos falsos obviamente.
     vector<bool> NaMST(V, false);
     // Adiciona o A na lista de prioridade e inicia seu peso como zero..
     Heap_min.push(make_pair(0, A));
     pesos[A] = 0;
 
-    // Trazido do pseudocodigo, itera atÈ a heap min n„o chegar em zero..
+    // Trazido do pseudocodigo, itera at√© a heap min n√£o chegar em zero..
     while (!Heap_min.empty())
     {
 
         // Extrai o vertice da fila de prioridade,
         int atual = Heap_min.top().second;
         Heap_min.pop();
-        NaMST[atual] = true;  // Include vertex in MST
+        NaMST[atual] = true;  
 
 
 
