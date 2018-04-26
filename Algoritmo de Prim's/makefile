@@ -1,4 +1,4 @@
 all: main.o
 
-InsertionSort.o: prim.cpp
-	@g++ -o main.o prim.cpp
+InsertionSort.o: main.cpp
+	@g++ -o main.o main.cpp
